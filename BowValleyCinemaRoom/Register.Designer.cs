@@ -62,7 +62,6 @@
             this.label1.Size = new System.Drawing.Size(128, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Register a new user";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // labelFirstName
             // 
