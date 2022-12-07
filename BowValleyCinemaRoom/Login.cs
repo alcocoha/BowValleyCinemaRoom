@@ -78,32 +78,6 @@ namespace BowValleyCinemaRoom
                     MessageBox.Show($"Error: {ex}");
                 }
             }
-
-
-
-
-            /*
-                    if (email == "admin@admin.com" && password == "12345")
-                {
-                    this.Hide();
-                    screenAdmin.ShowDialog();
-                    textEmail.Clear();
-                    textPassword.Clear();
-                    this.Show();
-                }
-                else if (email == "user@user.com" && password == "asdf")
-                {
-                    this.Hide();
-                    screenUser.ShowDialog();
-                    textEmail.Clear();
-                    textPassword.Clear();
-                    this.Show();
-                }
-                else {
-                    MessageBox.Show("We could found this register");
-                }*/
-
-
         }
 
         private void labelUser_Click(object sender, EventArgs e)

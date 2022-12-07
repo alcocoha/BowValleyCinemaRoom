@@ -21,5 +21,17 @@ namespace BowValleyCinemaRoom
         {
 
         }
+
+        private void openScreenAddNewAdmin_Click(object sender, EventArgs e)
+        {
+            RegisterAdmin registerAdmin = new RegisterAdmin();
+            registerAdmin.MdiParent = this;
+            registerAdmin.Show();
+        }
+
+        private void moviesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
