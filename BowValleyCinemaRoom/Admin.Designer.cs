@@ -62,13 +62,13 @@
             // createMovieToolStripMenuItem
             // 
             this.createMovieToolStripMenuItem.Name = "createMovieToolStripMenuItem";
-            this.createMovieToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.createMovieToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.createMovieToolStripMenuItem.Text = "Add New Movie";
             // 
             // seeMoviesToolStripMenuItem
             // 
             this.seeMoviesToolStripMenuItem.Name = "seeMoviesToolStripMenuItem";
-            this.seeMoviesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.seeMoviesToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.seeMoviesToolStripMenuItem.Text = "See Movies";
             // 
             // usersToolStripMenuItem
@@ -92,6 +92,7 @@
             this.seeUserRegistersToolStripMenuItem.Name = "seeUserRegistersToolStripMenuItem";
             this.seeUserRegistersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.seeUserRegistersToolStripMenuItem.Text = "See User Registers";
+            this.seeUserRegistersToolStripMenuItem.Click += new System.EventHandler(this.seeUserRegistersToolStripMenuItem_Click);
             // 
             // Admin
             // 

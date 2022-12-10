@@ -33,5 +33,12 @@ namespace BowValleyCinemaRoom
         {
 
         }
+
+        private void seeUserRegistersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistersList registersList = new RegistersList();
+            registersList.MdiParent = this;
+            registersList.Show();
+        }
     }
 }

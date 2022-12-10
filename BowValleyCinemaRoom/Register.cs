@@ -20,9 +20,9 @@ namespace BowValleyCinemaRoom
             string confirmPassword = textConfirmPassword.Text;
             string type = "isClient";
 
-            DBConnection dbConnection = new DBConnection();
+            RegisterQueries registerQueries = new RegisterQueries();
 
-            var data = dbConnection.AddRegister(firstName, lastName, address, birthday, phone, email, password, confirmPassword, type);
+            var data = registerQueries.AddRegister(firstName, lastName, address, birthday, phone, email, password, confirmPassword, type);
             
             MessageBox.Show(data.Item2);
 
