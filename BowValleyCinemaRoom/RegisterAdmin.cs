@@ -1,14 +1,14 @@
 ﻿
 namespace BowValleyCinemaRoom
 {
-    public partial class Register : Form
+    public partial class RegisterAdmin : Form
     {
-        public Register()
+        public RegisterAdmin()
         {
             InitializeComponent();
         }
 
-        private void btnRegister_Click(object sender, EventArgs e)
+        private void btnRegisterAdmin_Click(object sender, EventArgs e)
         {
             string firstName = textFirstName.Text;
             string lastName = textLastName.Text;
@@ -18,18 +18,27 @@ namespace BowValleyCinemaRoom
             string email = textEmail.Text;
             string password = textPassword.Text;
             string confirmPassword = textConfirmPassword.Text;
-            string type = "isClient";
+            string type = "isAdmin";
 
             RegisterQueries registerQueries = new RegisterQueries();
 
             var data = registerQueries.AddRegister(firstName, lastName, address, birthday, phone, email, password, confirmPassword, type);
-            
+
             MessageBox.Show(data.Item2);
 
-            if (data.Item1.Equals("success")) {
-                this.Hide();
+            if (data.Item1.Equals("success"))
+            {
+                textFirstName.Clear();
+                textLastName.Clear();
+                textAddress.Clear();
+                comboMonth.SelectedIndex = -1;
+                comboDay.SelectedIndex = -1;
+                comboYear.SelectedIndex = -1;
+                textPhone.Clear();
+                textEmail.Clear();
+                textPassword.Clear();
+                textConfirmPassword.Clear();
             }
-
         }
     }
 }
