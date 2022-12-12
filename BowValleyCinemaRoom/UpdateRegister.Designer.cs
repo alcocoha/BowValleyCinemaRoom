@@ -1,6 +1,6 @@
 ﻿namespace BowValleyCinemaRoom
 {
-    partial class RegisterAdmin
+    partial class UpdateRegister
     {
         /// <summary>
         /// Required designer variable.
@@ -34,7 +34,7 @@
             this.comboYear = new System.Windows.Forms.ComboBox();
             this.comboDay = new System.Windows.Forms.ComboBox();
             this.comboMonth = new System.Windows.Forms.ComboBox();
-            this.btnRegisterAdmin = new System.Windows.Forms.Button();
+            this.btnUpdateRegister = new System.Windows.Forms.Button();
             this.textConfirmPassword = new System.Windows.Forms.TextBox();
             this.labelConfirmPassword = new System.Windows.Forms.Label();
             this.textPassword = new System.Windows.Forms.TextBox();
@@ -56,30 +56,30 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(272, 140);
+            this.label4.Location = new System.Drawing.Point(289, 141);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(27, 13);
-            this.label4.TabIndex = 45;
+            this.label4.TabIndex = 67;
             this.label4.Text = "Year";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(213, 140);
+            this.label3.Location = new System.Drawing.Point(230, 141);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(26, 13);
-            this.label3.TabIndex = 44;
+            this.label3.TabIndex = 66;
             this.label3.Text = "Day";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(152, 140);
+            this.label2.Location = new System.Drawing.Point(169, 141);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(42, 13);
-            this.label2.TabIndex = 43;
+            this.label2.TabIndex = 65;
             this.label2.Text = "Month";
             // 
             // comboYear
@@ -160,10 +160,10 @@
             "2021",
             "2022",
             "2023"});
-            this.comboYear.Location = new System.Drawing.Point(272, 154);
+            this.comboYear.Location = new System.Drawing.Point(289, 155);
             this.comboYear.Name = "comboYear";
             this.comboYear.Size = new System.Drawing.Size(53, 23);
-            this.comboYear.TabIndex = 42;
+            this.comboYear.TabIndex = 64;
             // 
             // comboDay
             // 
@@ -200,10 +200,10 @@
             "29",
             "30",
             "31"});
-            this.comboDay.Location = new System.Drawing.Point(213, 154);
+            this.comboDay.Location = new System.Drawing.Point(230, 155);
             this.comboDay.Name = "comboDay";
             this.comboDay.Size = new System.Drawing.Size(53, 23);
-            this.comboDay.TabIndex = 41;
+            this.comboDay.TabIndex = 63;
             // 
             // comboMonth
             // 
@@ -221,157 +221,156 @@
             "October",
             "November",
             "December"});
-            this.comboMonth.Location = new System.Drawing.Point(154, 154);
+            this.comboMonth.Location = new System.Drawing.Point(171, 155);
             this.comboMonth.Name = "comboMonth";
             this.comboMonth.Size = new System.Drawing.Size(53, 23);
-            this.comboMonth.TabIndex = 40;
+            this.comboMonth.TabIndex = 62;
             // 
-            // btnRegisterAdmin
+            // btnUpdateRegister
             // 
-            this.btnRegisterAdmin.Location = new System.Drawing.Point(183, 365);
-            this.btnRegisterAdmin.Name = "btnRegisterAdmin";
-            this.btnRegisterAdmin.Size = new System.Drawing.Size(142, 23);
-            this.btnRegisterAdmin.TabIndex = 39;
-            this.btnRegisterAdmin.Text = "Register new admin";
-            this.btnRegisterAdmin.UseVisualStyleBackColor = true;
-            this.btnRegisterAdmin.Click += new System.EventHandler(this.btnRegisterAdmin_Click);
+            this.btnUpdateRegister.Location = new System.Drawing.Point(200, 366);
+            this.btnUpdateRegister.Name = "btnUpdateRegister";
+            this.btnUpdateRegister.Size = new System.Drawing.Size(142, 23);
+            this.btnUpdateRegister.TabIndex = 61;
+            this.btnUpdateRegister.Text = "Update register";
+            this.btnUpdateRegister.UseVisualStyleBackColor = true;
+            this.btnUpdateRegister.Click += new System.EventHandler(this.btnUpdateRegister_Click);
             // 
             // textConfirmPassword
             // 
-            this.textConfirmPassword.Location = new System.Drawing.Point(154, 319);
+            this.textConfirmPassword.Location = new System.Drawing.Point(171, 320);
             this.textConfirmPassword.Name = "textConfirmPassword";
             this.textConfirmPassword.PasswordChar = '*';
             this.textConfirmPassword.Size = new System.Drawing.Size(171, 23);
-            this.textConfirmPassword.TabIndex = 38;
+            this.textConfirmPassword.TabIndex = 60;
             // 
             // labelConfirmPassword
             // 
             this.labelConfirmPassword.AutoSize = true;
-            this.labelConfirmPassword.Location = new System.Drawing.Point(44, 322);
+            this.labelConfirmPassword.Location = new System.Drawing.Point(61, 323);
             this.labelConfirmPassword.Name = "labelConfirmPassword";
             this.labelConfirmPassword.Size = new System.Drawing.Size(104, 15);
-            this.labelConfirmPassword.TabIndex = 37;
+            this.labelConfirmPassword.TabIndex = 59;
             this.labelConfirmPassword.Text = "Confirm Password";
             // 
             // textPassword
             // 
-            this.textPassword.Location = new System.Drawing.Point(154, 278);
+            this.textPassword.Location = new System.Drawing.Point(171, 279);
             this.textPassword.Name = "textPassword";
             this.textPassword.PasswordChar = '*';
             this.textPassword.Size = new System.Drawing.Size(171, 23);
-            this.textPassword.TabIndex = 36;
+            this.textPassword.TabIndex = 58;
             // 
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
-            this.labelPassword.Location = new System.Drawing.Point(91, 281);
+            this.labelPassword.Location = new System.Drawing.Point(108, 282);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(57, 15);
-            this.labelPassword.TabIndex = 35;
+            this.labelPassword.TabIndex = 57;
             this.labelPassword.Text = "Password";
             // 
             // textEmail
             // 
-            this.textEmail.Location = new System.Drawing.Point(154, 238);
+            this.textEmail.Location = new System.Drawing.Point(171, 239);
             this.textEmail.Name = "textEmail";
             this.textEmail.Size = new System.Drawing.Size(171, 23);
-            this.textEmail.TabIndex = 34;
+            this.textEmail.TabIndex = 56;
             // 
             // labelEmail
             // 
             this.labelEmail.AutoSize = true;
-            this.labelEmail.Location = new System.Drawing.Point(112, 241);
+            this.labelEmail.Location = new System.Drawing.Point(129, 242);
             this.labelEmail.Name = "labelEmail";
             this.labelEmail.Size = new System.Drawing.Size(36, 15);
-            this.labelEmail.TabIndex = 33;
+            this.labelEmail.TabIndex = 55;
             this.labelEmail.Text = "Email";
             // 
             // textPhone
             // 
-            this.textPhone.Location = new System.Drawing.Point(154, 197);
+            this.textPhone.Location = new System.Drawing.Point(171, 198);
             this.textPhone.Name = "textPhone";
             this.textPhone.Size = new System.Drawing.Size(171, 23);
-            this.textPhone.TabIndex = 32;
+            this.textPhone.TabIndex = 54;
             // 
             // labelPhone
             // 
             this.labelPhone.AutoSize = true;
-            this.labelPhone.Location = new System.Drawing.Point(107, 200);
+            this.labelPhone.Location = new System.Drawing.Point(124, 201);
             this.labelPhone.Name = "labelPhone";
             this.labelPhone.Size = new System.Drawing.Size(41, 15);
-            this.labelPhone.TabIndex = 31;
+            this.labelPhone.TabIndex = 53;
             this.labelPhone.Text = "Phone";
             // 
             // labelBirthday
             // 
             this.labelBirthday.AutoSize = true;
-            this.labelBirthday.Location = new System.Drawing.Point(97, 157);
+            this.labelBirthday.Location = new System.Drawing.Point(114, 158);
             this.labelBirthday.Name = "labelBirthday";
             this.labelBirthday.Size = new System.Drawing.Size(51, 15);
-            this.labelBirthday.TabIndex = 30;
+            this.labelBirthday.TabIndex = 52;
             this.labelBirthday.Text = "Birthday";
             // 
             // textAddress
             // 
-            this.textAddress.Location = new System.Drawing.Point(154, 111);
+            this.textAddress.Location = new System.Drawing.Point(171, 112);
             this.textAddress.Name = "textAddress";
             this.textAddress.Size = new System.Drawing.Size(171, 23);
-            this.textAddress.TabIndex = 29;
-            this.textAddress.TextChanged += new System.EventHandler(this.textAddress_TextChanged);
+            this.textAddress.TabIndex = 51;
             // 
             // labelAddress
             // 
             this.labelAddress.AutoSize = true;
-            this.labelAddress.Location = new System.Drawing.Point(99, 114);
+            this.labelAddress.Location = new System.Drawing.Point(116, 115);
             this.labelAddress.Name = "labelAddress";
             this.labelAddress.Size = new System.Drawing.Size(49, 15);
-            this.labelAddress.TabIndex = 28;
+            this.labelAddress.TabIndex = 50;
             this.labelAddress.Text = "Address";
             // 
             // textLastName
             // 
-            this.textLastName.Location = new System.Drawing.Point(154, 68);
+            this.textLastName.Location = new System.Drawing.Point(171, 69);
             this.textLastName.Name = "textLastName";
             this.textLastName.Size = new System.Drawing.Size(171, 23);
-            this.textLastName.TabIndex = 27;
+            this.textLastName.TabIndex = 49;
             // 
             // labelLastName
             // 
             this.labelLastName.AutoSize = true;
-            this.labelLastName.Location = new System.Drawing.Point(85, 71);
+            this.labelLastName.Location = new System.Drawing.Point(102, 72);
             this.labelLastName.Name = "labelLastName";
             this.labelLastName.Size = new System.Drawing.Size(63, 15);
-            this.labelLastName.TabIndex = 26;
+            this.labelLastName.TabIndex = 48;
             this.labelLastName.Text = "Last Name";
             // 
             // textFirstName
             // 
-            this.textFirstName.Location = new System.Drawing.Point(154, 27);
+            this.textFirstName.Location = new System.Drawing.Point(171, 28);
             this.textFirstName.Name = "textFirstName";
             this.textFirstName.Size = new System.Drawing.Size(171, 23);
-            this.textFirstName.TabIndex = 25;
+            this.textFirstName.TabIndex = 47;
             // 
             // labelFirstName
             // 
             this.labelFirstName.AutoSize = true;
-            this.labelFirstName.Location = new System.Drawing.Point(84, 30);
+            this.labelFirstName.Location = new System.Drawing.Point(101, 31);
             this.labelFirstName.Name = "labelFirstName";
             this.labelFirstName.Size = new System.Drawing.Size(64, 15);
-            this.labelFirstName.TabIndex = 24;
+            this.labelFirstName.TabIndex = 46;
             this.labelFirstName.Text = "First Name";
             // 
-            // RegisterAdmin
+            // UpdateRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(446, 450);
+            this.ClientSize = new System.Drawing.Size(444, 450);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboYear);
             this.Controls.Add(this.comboDay);
             this.Controls.Add(this.comboMonth);
-            this.Controls.Add(this.btnRegisterAdmin);
+            this.Controls.Add(this.btnUpdateRegister);
             this.Controls.Add(this.textConfirmPassword);
             this.Controls.Add(this.labelConfirmPassword);
             this.Controls.Add(this.textPassword);
@@ -387,9 +386,9 @@
             this.Controls.Add(this.labelLastName);
             this.Controls.Add(this.textFirstName);
             this.Controls.Add(this.labelFirstName);
-            this.Name = "RegisterAdmin";
-            this.Text = "Add new admin";
-            this.Load += new System.EventHandler(this.RegisterAdmin_Load);
+            this.Name = "UpdateRegister";
+            this.Text = "UpdateRegister";
+            this.Load += new System.EventHandler(this.UpdateRegister_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -403,7 +402,7 @@
         private ComboBox comboYear;
         private ComboBox comboDay;
         private ComboBox comboMonth;
-        private Button btnRegisterAdmin;
+        private Button btnUpdateRegister;
         private TextBox textConfirmPassword;
         private Label labelConfirmPassword;
         private TextBox textPassword;

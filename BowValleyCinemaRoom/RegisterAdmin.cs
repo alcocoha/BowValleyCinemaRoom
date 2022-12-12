@@ -40,5 +40,15 @@ namespace BowValleyCinemaRoom
                 textConfirmPassword.Clear();
             }
         }
+
+        private void textAddress_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RegisterAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

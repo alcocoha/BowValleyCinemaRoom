@@ -69,5 +69,23 @@ namespace BowValleyCinemaRoom
                 }
             }
         }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            UpdateRegister updateMovie = new UpdateRegister(Convert.ToInt32(dgRegisters.CurrentCell.Value));
+            updateMovie.Show();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            RegisterQueries registerQueries = new RegisterQueries();
+            var data = registerQueries.DeleteRegisterById(Convert.ToInt32(dgRegisters.CurrentCell.Value));
+            //MessageBox.Show(data.ToString());
+            if (data.Item1 == "success")
+            {
+                MessageBox.Show("Register successfully deleted!");
+                dgRegisters.DataSource = registerQueries.GetRegisters();
+            }
+        }
     }
 }
