@@ -69,5 +69,10 @@ namespace BowValleyCinemaRoom
                 }
             }
         }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(textFilter.Text);
+        }
     }
 }

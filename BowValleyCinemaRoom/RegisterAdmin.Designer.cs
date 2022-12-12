@@ -317,6 +317,7 @@
             this.textAddress.Name = "textAddress";
             this.textAddress.Size = new System.Drawing.Size(171, 23);
             this.textAddress.TabIndex = 29;
+            this.textAddress.TextChanged += new System.EventHandler(this.textAddress_TextChanged);
             // 
             // labelAddress
             // 
