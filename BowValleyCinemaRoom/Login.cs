@@ -28,11 +28,11 @@ namespace BowValleyCinemaRoom
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            User screenUser = new User();
-            Admin screenAdmin = new Admin();
-
             string email = textEmail.Text;
             string password = textPassword.Text;
+
+            User screenUser;
+            Admin screenAdmin = new Admin();
 
 
             DBConnection dbconnection = new DBConnection();
@@ -57,6 +57,7 @@ namespace BowValleyCinemaRoom
                     {
                         if (dtable.Rows[0][2].ToString() == "isClient") {
                             this.Hide();
+                            screenUser = new User(Int32.Parse(dtable.Rows[0][3].ToString()));
                             screenUser.ShowDialog();
                             textEmail.Clear();
                             textPassword.Clear();
