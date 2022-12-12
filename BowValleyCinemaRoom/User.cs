@@ -28,7 +28,7 @@ namespace BowValleyCinemaRoom
 
         private void User_Load(object sender, EventArgs e)
         {
-            MessageBox.Show(RegisterID.ToString());
+
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
