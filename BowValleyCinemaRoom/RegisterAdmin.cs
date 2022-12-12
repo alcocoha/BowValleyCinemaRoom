@@ -45,5 +45,10 @@ namespace BowValleyCinemaRoom
         {
 
         }
+
+        private void RegisterAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
