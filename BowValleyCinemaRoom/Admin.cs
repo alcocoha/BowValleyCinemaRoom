@@ -40,5 +40,19 @@ namespace BowValleyCinemaRoom
             registersList.MdiParent = this;
             registersList.Show();
         }
+
+        private void createMovieToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddMovie addMovie = new AddMovie();
+            addMovie.MdiParent = this;
+            addMovie.Show();
+        }
+
+        private void seeMoviesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MovieList movieList = new MovieList();
+            movieList.MdiParent = this;
+            movieList.Show();
+        }
     }
 }

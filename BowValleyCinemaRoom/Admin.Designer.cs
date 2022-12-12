@@ -62,14 +62,16 @@
             // createMovieToolStripMenuItem
             // 
             this.createMovieToolStripMenuItem.Name = "createMovieToolStripMenuItem";
-            this.createMovieToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.createMovieToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.createMovieToolStripMenuItem.Text = "Add New Movie";
+            this.createMovieToolStripMenuItem.Click += new System.EventHandler(this.createMovieToolStripMenuItem_Click);
             // 
             // seeMoviesToolStripMenuItem
             // 
             this.seeMoviesToolStripMenuItem.Name = "seeMoviesToolStripMenuItem";
-            this.seeMoviesToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.seeMoviesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.seeMoviesToolStripMenuItem.Text = "See Movies";
+            this.seeMoviesToolStripMenuItem.Click += new System.EventHandler(this.seeMoviesToolStripMenuItem_Click);
             // 
             // usersToolStripMenuItem
             // 
@@ -83,14 +85,14 @@
             // openScreenAddNewAdmin
             // 
             this.openScreenAddNewAdmin.Name = "openScreenAddNewAdmin";
-            this.openScreenAddNewAdmin.Size = new System.Drawing.Size(180, 22);
+            this.openScreenAddNewAdmin.Size = new System.Drawing.Size(168, 22);
             this.openScreenAddNewAdmin.Text = "Add New Admin";
             this.openScreenAddNewAdmin.Click += new System.EventHandler(this.openScreenAddNewAdmin_Click);
             // 
             // seeUserRegistersToolStripMenuItem
             // 
             this.seeUserRegistersToolStripMenuItem.Name = "seeUserRegistersToolStripMenuItem";
-            this.seeUserRegistersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.seeUserRegistersToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.seeUserRegistersToolStripMenuItem.Text = "See User Registers";
             this.seeUserRegistersToolStripMenuItem.Click += new System.EventHandler(this.seeUserRegistersToolStripMenuItem_Click);
             // 
