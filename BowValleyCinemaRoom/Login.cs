@@ -50,6 +50,14 @@ namespace BowValleyCinemaRoom
 
                     SqlDataAdapter sda = new SqlDataAdapter(cmd);
                     DataTable dtable = new DataTable();
+                    try
+                    {
+                        validateFields();
+                    }catch(Exception ex)
+                    {
+                        MessageBox.Show($"Error: {ex.Message}");
+                        return;
+                    }
                     sda.Fill(dtable);
 
                     //MessageBox.Show($"{dtable.Rows.Count}, {dtable.Rows[0][0].ToString()}, {dtable.Rows[0][1].ToString()}, {dtable.Rows[0][2].ToString()}");
@@ -71,13 +79,26 @@ namespace BowValleyCinemaRoom
                         }
                     }
                     else {
-                        MessageBox.Show("We did not find users with these credentials");
+                        //MessageBox.Show("We did not find users with these credentials");
+                        throw new ErrorHandler.InvalidCredentialsException();
                     }
 
                 }
                 catch (Exception ex) {
-                    MessageBox.Show($"Error: {ex}");
+                    MessageBox.Show($"Error: {ex.Message}");
                 }
+            }
+        }
+
+        private void validateFields()
+        {
+            if (textEmail.Text == "" )
+            {
+                throw new ErrorHandler.EmptyFieldException("Email");
+            }
+            if (textPassword.Text == "")
+            {
+                throw new ErrorHandler.EmptyFieldException("Password");
             }
         }
 

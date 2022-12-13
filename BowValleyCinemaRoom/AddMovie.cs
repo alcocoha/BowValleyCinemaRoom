@@ -34,6 +34,16 @@ namespace BowValleyCinemaRoom
 
             MovieQueries movieQueries = new MovieQueries();
 
+            try
+            {
+                validateFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+                return;
+            }
+
             var data = movieQueries.AddMovie(title, category, description, year, totalCopies, price);
 
             MessageBox.Show(data.Item2);
@@ -46,6 +56,29 @@ namespace BowValleyCinemaRoom
                 textYear.Clear();
                 textCopiesInStore.Clear();
                 textPrice.Clear();
+            }
+        }
+        private void validateFields()
+        {
+            if (textTitle.Text == "")
+            {
+                throw new ErrorHandler.EmptyFieldException("Title");
+            }
+            if (textDescription.Text == "")
+            {
+                throw new ErrorHandler.EmptyFieldException("Description");
+            }
+            if (textYear.Text == "")
+            {
+                throw new ErrorHandler.EmptyFieldException("Year");
+            }
+            if (textPrice.Text == "")
+            {
+                throw new ErrorHandler.EmptyFieldException("Price");
+            }
+            if (textCopiesInStore.Text == "")
+            {
+                throw new ErrorHandler.EmptyFieldException("Copies in Store");
             }
         }
     }
