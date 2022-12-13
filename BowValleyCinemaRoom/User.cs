@@ -21,7 +21,7 @@ namespace BowValleyCinemaRoom
 
         private void moviesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Movies movies = new Movies();
+            Movies movies = new Movies(RegisterID);
             movies.MdiParent = this;
             movies.Show();
         }

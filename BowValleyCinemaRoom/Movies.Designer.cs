@@ -38,8 +38,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.labelTotalMovies = new System.Windows.Forms.Label();
             this.labelTotalPrice = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnRent = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgMovies)).BeginInit();
             this.SuspendLayout();
             // 
@@ -138,33 +138,34 @@
             this.labelTotalPrice.Text = "0.0 cad";
             this.labelTotalPrice.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // button2
+            // btnRent
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(489, 370);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(248, 50);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Rent Movies";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnRent.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRent.Location = new System.Drawing.Point(489, 370);
+            this.btnRent.Name = "btnRent";
+            this.btnRent.Size = new System.Drawing.Size(248, 50);
+            this.btnRent.TabIndex = 10;
+            this.btnRent.Text = "Rent Movies";
+            this.btnRent.UseVisualStyleBackColor = true;
+            this.btnRent.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btnReset
             // 
-            this.button3.Location = new System.Drawing.Point(662, 332);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Reset list";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnReset.Location = new System.Drawing.Point(662, 332);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(75, 23);
+            this.btnReset.TabIndex = 11;
+            this.btnReset.Text = "Reset list";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.button3_Click);
             // 
             // Movies
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(760, 477);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnReset);
+            this.Controls.Add(this.btnRent);
             this.Controls.Add(this.labelTotalPrice);
             this.Controls.Add(this.labelTotalMovies);
             this.Controls.Add(this.button1);
@@ -196,7 +197,7 @@
         private Button button1;
         private Label labelTotalMovies;
         private Label labelTotalPrice;
-        private Button button2;
-        private Button button3;
+        private Button btnRent;
+        private Button btnReset;
     }
 }

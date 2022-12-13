@@ -161,5 +161,42 @@ namespace BowValleyCinemaRoom
                 return dtable;
             }
         }
+
+        public (string, string) RentMovie(string movieID, int registerID, string rentDate, string returnDate)
+        {
+            using (SqlConnection connection = new SqlConnection(dbConnection.GetConnectionString()))
+            {
+
+                try
+                {
+
+                    connection.Open();
+                    SqlCommand cmd = new SqlCommand("spInsertRentalMovie", connection);
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@MovieID", movieID);
+                    cmd.Parameters.AddWithValue("@RegisterID", registerID);
+                    cmd.Parameters.AddWithValue("@RentDate", rentDate);
+                    cmd.Parameters.AddWithValue("@ReturnDate", returnDate);
+
+                    var result = cmd.ExecuteNonQuery();
+
+                    if (result == 1)
+                    {
+                        return ("success", "Movie rented successfully");
+                    }
+                    else
+                    {
+                        return ("error", "Error found while renting movie to DB");
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    return ("error", $"Error: {ex}");
+                }
+
+            }
+        }
     }
 }

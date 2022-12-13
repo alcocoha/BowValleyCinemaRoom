@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.AxHost;
 
 namespace BowValleyCinemaRoom
 {
@@ -15,9 +16,16 @@ namespace BowValleyCinemaRoom
     {
         int totalMovies = 0;
         int totalPrice = 0;
-        public Movies()
+
+        //string movieId;
+        int registerId;
+        //string rentDate;
+        //string returnDate;
+
+        public Movies(int RegisterId)
         {
             InitializeComponent();
+            registerId = RegisterId;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -68,6 +76,17 @@ namespace BowValleyCinemaRoom
 
             labelTotalMovies.Text = $"Total movies to rent : {totalMovies}";
             labelTotalPrice.Text = $"0.0 cad";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DateTime startDate = DateTime.Now;
+            string startDateFormat = startDate.ToString("MM/dd/yyyy");
+            DateTime endDate = startDate.AddDays(10);
+            string endDateFormat = endDate.ToString("MM/dd/yyyy");
+
+            MessageBox.Show($"Rent init {startDateFormat} and ends {endDateFormat}");
+
         }
     }
 }
