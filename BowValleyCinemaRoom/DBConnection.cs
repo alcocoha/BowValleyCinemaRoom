@@ -13,7 +13,7 @@ namespace BowValleyCinemaRoom
 {
     internal class DBConnection
     {
-        private const string connectionString = "Data Source=WSAMZN-1IFU9CTT;Initial Catalog=BowValleyCinemaRoom;"
+        private const string connectionString = "Data Source=KOODIE\\SQLEXPRESS;Initial Catalog=BowValleyCinemaRoom;"
         + "Integrated Security=true";
 
         public string GetConnectionString() {
