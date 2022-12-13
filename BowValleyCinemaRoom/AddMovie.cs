@@ -25,6 +25,16 @@ namespace BowValleyCinemaRoom
         private void btnRegisterMovie_Click(object sender, EventArgs e)
         {
             //AddMovie(string title, string category, string description, string year, int totalCopies, int price)
+            try
+            {
+                validateFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+                return;
+            }
+
             string title = textTitle.Text;
             string category = comboBoxCategory.SelectedItem.ToString();
             string description = textDescription.Text;
@@ -33,6 +43,8 @@ namespace BowValleyCinemaRoom
             int price = Int32.Parse(textPrice.Text);
 
             MovieQueries movieQueries = new MovieQueries();
+
+
 
             var data = movieQueries.AddMovie(title, category, description, year, totalCopies, price);
 
@@ -46,6 +58,33 @@ namespace BowValleyCinemaRoom
                 textYear.Clear();
                 textCopiesInStore.Clear();
                 textPrice.Clear();
+            }
+        }
+        private void validateFields()
+        {
+            if (textTitle.Text == "")
+            {
+                throw new ErrorHandler.EmptyFieldException("Title");
+            }
+            if (textDescription.Text == "")
+            {
+                throw new ErrorHandler.EmptyFieldException("Description");
+            }
+            if (comboBoxCategory.SelectedItem == "")
+            {
+                throw new ErrorHandler.EmptyFieldException("Category");
+            }
+            if (textYear.Text == "")
+            {
+                throw new ErrorHandler.EmptyFieldException("Year");
+            }
+            if (textCopiesInStore.Text == "")
+            {
+                throw new ErrorHandler.EmptyFieldException("Copies in Store");
+            }
+            if (textPrice.Text == "")
+            {
+                throw new ErrorHandler.EmptyFieldException("Price");
             }
         }
     }
