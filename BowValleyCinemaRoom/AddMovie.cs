@@ -70,7 +70,7 @@ namespace BowValleyCinemaRoom
             {
                 throw new ErrorHandler.EmptyFieldException("Description");
             }
-            if (comboBoxCategory.SelectedItem == "")
+            if (comboBoxCategory.SelectedIndex == -1)
             {
                 throw new ErrorHandler.EmptyFieldException("Category");
             }
